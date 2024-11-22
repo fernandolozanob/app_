@@ -1,4 +1,4 @@
-Symfony Demo Application
+Symfony Demo cabinet avocat Application
 ========================
 
 The "Symfony Demo cabinet avocat Application" is a reference application created to show how
