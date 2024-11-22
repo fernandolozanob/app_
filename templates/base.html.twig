@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>{% block title %} {% endblock %}</title>
+  
+        {% block stylesheets %}
+         {{ encore_entry_link_tags('app') }}
+        {% endblock %}
+</head>
+
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark masthead-bg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Cabinet</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="{{path('app_m_n')}}">About</a>
+          </li>
+          <li class="nav-item li-service" style="">
+            <a class="nav-link" href="#">Services</a>
+
+            <ul class="dropdown-menu bg-dark menucache" role="menu" aria-labelledby="dropdownMenu" >
+              <li class="nav-item item2" ><a class="nav-link" tabindex="-1" href="#" target="_blank">Droit des affaires</a></li>
+              <li class="nav-item item2" ><a class="nav-link" tabindex="-1" href="#">Droit de l'informatique</a></li>
+              <li class="nav-item item2" ><a class="nav-link" tabindex="-1" href="#">Droit du travail et de la sécurité sociale</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Heading Row -->
+    <div class="row align-items-center my-5">
+
+      <div class="col-lg-7">{% block  image1%} XXXXXXXXXXXXXXX {% endblock %} </div>
+
+      <!-- /.col-lg-8 -->
+      <div class="col-lg-5">{% block  contenu1%} XXXXXXXXXXXXXXX {% endblock %}</div>
+        
+      <!-- /.col-md-4 -->
+    </div>
+    <!-- /.row -->
+
+    <!-- Call to Action Well -->
+    <div class="card text-white bg-secondary my-5 py-4 text-center">
+      <div class="card-body">
+        <p class="text-white m-0">This call to action card is a great place to showcase some important information or display a clever tagline!</p>
+      </div>
+    </div>
+
+    <!-- Content Row -->
+    <div class="row">
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <div class="card-body">
+              {% block  contenu2%} XXXXXXXXXXXXXXXXX  {% endblock %} 
+          </div>
+          <div class="card-footer">
+              {% block  liencontenu2%} XXXXXXXXXXXXXXXXX  {% endblock %} 
+
+          </div>
+        </div>
+      </div>
+      <!-- /.col-md-4 -->
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <div class="card-body">
+
+
+           {% block  contenu3%} XXXXXXXXXXXXXXXXX  {% endblock %} 
+           
+          </div>
+          <div class="card-footer">
+             {% block  liencontenu3%} XXXXXXXXXXXXXXXXX  {% endblock %} 
+           
+          </div>
+        </div>
+      </div>
+      <!-- /.col-md-4 -->
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <div class="card-body">
+
+
+          {% block  contenu4%} XXXXXXXXXXXXXXXXX  {% endblock %} 
+  
+          </div>
+          <div class="card-footer">
+            {% block  liencontenu4%} XXXXXXXXXXXXXXXXX  {% endblock %} 
+          
+          </div>
+        </div>
+      </div>
+      <!-- /.col-md-4 -->
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Cabinet  2024</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+  
+</body>
+
+
+
+  {% block javascripts %}
+      {{ encore_entry_script_tags('app') }}
+  {% endblock %}
+
+
+</html>
+
+
+
+
+
+
+
+
+

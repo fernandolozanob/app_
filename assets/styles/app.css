@@ -1,0 +1,30 @@
+body {
+    background-color: lightgray;
+}
+
+
+.menucache{
+    position: absolute; 
+    left: 7%;
+    margin:0px;
+    padding: 0px;
+}
+
+
+.showMenu{
+    display: block; 
+}
+
+.bg-dark {
+    background-color: #ff7945 !important;
+}
+
+
+.li-service{
+    position: relative;
+}
+
+
+li.item2{
+    border-bottom: 1px solid white;
+}

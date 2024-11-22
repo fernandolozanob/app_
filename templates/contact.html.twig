@@ -1,0 +1,107 @@
+
+{% extends "base.html.twig" %}
+
+      {% block stylesheets %}
+      {{ encore_entry_link_tags('app') }}
+      {% endblock %}
+
+
+      {% block  image1%}
+         <img class="img-fluid rounded mb-4 mb-lg-0" src="http://placehold.it/900x400" alt="">
+      {% endblock %}
+
+
+
+      {% block  contenu1%}
+       <h1 class="font-weight-light"> Contact </h1>
+
+        <p>Vous pouvez nous contacter</p>
+
+
+          <div class="social-icons" style="display: flex;justify-content: space-between;">
+            
+                <a href="https://gitlab.com/dashboard/projects">
+                        <i class="fab fa-gitlab"></i>
+                         <span style="display:block;margin-top:3%;"> Télephone </span>
+                </a>
+
+ 
+                <a href="mailto:coronait@yahoo.com">
+                        <i class="fab fa-gitlab"></i>
+                         <span style="display:block;margin-top:3%;"> Email </span>
+                </a>
+   
+                <a href="https://gitlab.com/dashboard/projects">
+                        <i class="fab fa-gitlab"></i>
+                    <span style="display:block;margin-top:3%;"> Adresse </span>
+                </a>
+
+          </div>
+
+
+
+        <div class="progress">
+          <div class="bar" style="width: 60%;"></div>
+        </div>
+
+
+      {% endblock %}
+
+
+
+
+       {% block  contenu2%} 
+       		 <h2 class="card-title">Service ... </h2>
+            <p class="card-text">
+            text text text
+             </p>
+      {% endblock %} 
+
+
+       {% block  liencontenu2%}
+       			
+        <div class="progress">
+          <div class="bar" style="width: 60%;"></div>
+        </div>
+
+       {% endblock %} 
+
+
+
+       {% block  contenu3%} 
+       		 <h2 class="card-title">Service ...</h2>
+            <p class="card-text">
+                text text text
+            </p>
+        {% endblock %} 
+
+
+
+        {% block  liencontenu3%} 
+                <div class="progress">
+                  <div class="bar" style="width: 60%;"></div>
+                </div>
+          {% endblock %} 
+
+
+         {% block  contenu4%} 
+         	<h2 class="card-title">Service ...</h2>
+            <p class="card-text">
+            text text text
+          </p>
+
+          {% endblock %} 
+
+          {% block  liencontenu4%} 
+                  <div class="progress">
+                    <div class="bar" style="width: 60%;"></div>
+                  </div>
+           {% endblock %} 
+
+
+
+
+
+   {% block javascripts %}
+      {{ encore_entry_script_tags('app') }}
+  {% endblock %}
